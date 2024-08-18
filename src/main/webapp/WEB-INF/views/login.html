@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>내 정보 찾기</title>
+</head>
+<style>
+.box {
+	margin-top: 100px;
+	width: 300px;
+	height: 190px;
+	border-color: #ccc;
+	border-style: solid;
+	border-width: 3px;
+}
+
+.space-between {
+	margin-top: 10px;
+	width: 240px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.column-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+</style>
+<body>
+	<form action = "/login" method ="POST" style="display: flex; justify-content: center">
+		<div class="box column-center">
+			<h2>로그인 화면</h2>
+			<div class="space-between">
+				아이디 <input name="id">
+			</div>
+			<div class="space-between">
+				비밀번호 <input name="pw" type="password">
+			</div>
+			<div style="width: 240px; display: flex; justify-content: center">
+				<button style="width: 100px; margin-top: 15px;" type='submit'>로그인</button>
+			</div>
+
+			<div class="space-between" style="margin-top: 30px;">
+				<a href='/register'>회원가입</a>
+				<div>|</div>
+				<a href='/search-info'>내정보찾기</a>
+			</div>
+
+		</div>
+
+	</form>
+
+
+
+</body>
+</html>

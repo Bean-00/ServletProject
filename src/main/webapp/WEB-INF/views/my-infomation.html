@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+<title>내 정보 보기</title>
+<meta charset="EUC-KR">
+</head>
+<style>
+* {
+	box-sizing: border-box;
+}
+
+.form-body {
+	width: 1000px;
+	margin: auto;
+}
+
+.form {
+	width: 1000px;
+}
+
+.form table {
+	width: 100%;
+}
+
+.star {
+	color: #c21818;
+}
+
+.form table, .form th, .form td {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+}
+
+.d-flex {
+	display: flex;
+	align-items: center;
+}
+
+.form th {
+	width: 200px;
+	height: 40px;
+	padding: 5px;
+}
+
+.space-between {
+	justify-content: space-between;
+}
+
+.margin5px {
+	margin-left: 5px;
+}
+
+</style>
+<body>
+	<div class="form-body">
+		<div class="d-flex space-between">
+			<h2>내 정보 보기</h2>
+		</div>
+		<form class="form" action="/register" method="POST">
+			<table>
+				<tbody>
+					<tr>
+						<th><label for="name-form"> <span class="star">*</span>
+								이름
+						</label></th>
+						<td colspan="3"><span class="margin5px">이름</span></td>
+					</tr>
+					<tr>
+						<th><label for="gender-male"> <span class="star">*</span>
+								성별
+						</label></th>
+						<td colspan="3"><span class="margin5px">성별</span></td>
+					</tr>
+					<tr>
+						<th><label for="year-input" class="form-label"><span
+								class="star">*</span> 생년월일</label></th>
+						<td colspan="3">
+							<div class="d-flex">
+								<span class="margin5px">1000</span> 년 <span class="margin5px">01</span>
+								월 <span class="margin5px">01</span> 일
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="job-select" class="form-label"><span
+								class="star">*</span> 직업</label></th>
+						<td><span class="margin5px">프론트엔드개발자</span></td>
+					</tr>
+					<tr>
+						<th rowspan="2"><label for="tel1"><span class="star">*</span>
+								연락처</label></th>
+					</tr>
+					<tr>
+						<td>
+							<div class="margin5px">
+								 <span>010-0000-0000</span>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="addr-input"><span class="star">*</span>거주지
+								주소</label></th>
+						<td colspan="3">
+							<div class="margin5px">
+								<span>서울 경기 부산</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="d-flex" style="justify-content: center; margin-top: 30px">
+				<a href='#'>가입화면으로 이동하기</a>
+			</div>
+		</form>
+
+	</div>
+</body>
+</html>
