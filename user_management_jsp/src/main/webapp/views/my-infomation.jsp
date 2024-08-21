@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+	pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 
 <html lang="ko">
@@ -52,13 +52,12 @@
 .margin5px {
 	margin-left: 5px;
 }
-
 </style>
 <body>
-<%@ page import = "user.vo.UserVO"%>
-<%@ page import = "user.dao.UserDAO"%>
-<%@ page import = "java.util.*" %>
-<%
+	<%@ page import="user.vo.UserVO"%>
+	<%@ page import="user.dao.UserDAO"%>
+	<%@ page import="java.util.*"%>
+	<%
 String name = request.getParameter("name");
 
 UserVO userVO = new UserVO();
@@ -112,7 +111,7 @@ if (Objects.isNull(userVO)){
 					<tr>
 						<td>
 							<div class="margin5px">
-								 <span><%= userVO.getMobile() %></span>
+								<span><%= userVO.getMobile() %></span>
 							</div>
 						</td>
 					</tr>
@@ -127,9 +126,13 @@ if (Objects.isNull(userVO)){
 					</tr>
 				</tbody>
 			</table>
-			<div class="d-flex" style="justify-content: center; margin-top: 30px">
+			<div class="d-flex" style="justify-content: center; margin-top: 30px; margin-right: 10px">
 				<a href='/views/login.jsp'>로그인 화면으로 이동하기</a>
 			</div>
+			<div class="d-flex" style="justify-content: center; margin-top: 30px">
+				<a href='/views/update-info.jsp'>내 정보 수정하기</a>
+			</div>
+
 		</form>
 
 	</div>
